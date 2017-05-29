@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"spaci.app_updates"},{"v":1,"key":{"key":1},"name":"key_1","ns":"spaci.app_updates","background":true}]}

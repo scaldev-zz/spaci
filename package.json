@@ -10,8 +10,8 @@
     "express-handlebars": "3.0.0",
     "handlebars": "4.0.6",
     "node-sass": "4.5.0",
-    "node-sass-middleware": "0.11.0", 
-    "dotenv": "4.0.0", 
+    "node-sass-middleware": "0.11.0",
+    "dotenv": "4.0.0",
     "async": "2.1.4"
   },
   "devDependencies": {
@@ -21,6 +21,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node keystone.js"
+    "start": "node keystone.js",
+    "mongorestore": "mongorestore -d spaci --dir dump/spaci --drop",
+    "mongodump": "mongodump -d spaci"
   }
 }
