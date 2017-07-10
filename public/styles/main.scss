@@ -12,11 +12,12 @@
 // You can also add your own custom variables to this file for
 // use in your site stylesheets.
 
-@import "site/variables";
+@import "base/variables";
+@import "base/typography";
 
 
 // Site Styles
 // ===========
 
 // Add your own site style includes here
-@import "site/layout";
+@import "base/layout";
