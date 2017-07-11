@@ -5821,6 +5821,40 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*    UTILITIES
+==================*/
+/**
+ * Burger
+ *
+ * (---) top    -> &:before
+ * [---] middle -> &
+ * (---) bottom -> &:after
+ */
+/**
+ * Burger
+ */
+/**
+ * Select parts of the burger
+ */
+/**
+ * Burger animations
+ */
+/**
+*
+* Variables
+*
+**/
+/*===================================
+=               FONTS               =
+===================================*/
+/*===================================
+=              COLORS               =
+===================================*/
+/*===================================
+=            BREAKPOINTS            =
+===================================*/
+/*     BASE
+=====================*/
 #header {
   margin-top: 30px; }
 
@@ -5835,6 +5869,25 @@ button.close {
   max-width: 100%;
   height: auto; }
 
+<<<<<<< HEAD
+=======
+/*
+*    TYPOGRAPHY
+*/
+body {
+  color: #000000;
+  font: normal 125%/1.4 "Avenir Next", Georgia, Times, "Times New Roman", serif; }
+  body h1, body h2 {
+    font-family: 'Avenir Next';
+    font-weight: bold;
+    text-transform: uppercase; }
+  body h3, body h4, body h5 {
+    font-family: 'Avenir Next';
+    color: #000000; }
+  body a {
+    color: #000000; }
+
+>>>>>>> a731719081d203b5a74e68bbe5e3e204552f6551
 /*    PAGES
 ==================*/
 /*    HOME STYLES

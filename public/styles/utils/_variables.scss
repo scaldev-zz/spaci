@@ -1,0 +1,56 @@
+// Override Bootstrap variables in this file, e.g.
+
+$font-size-base: 14px;
+
+
+/**
+*
+* Variables
+*
+**/
+
+$max-width: 1160px;
+
+/*===================================
+=               FONTS               =
+===================================*/
+
+$header-font-stack: 'Avenir Next', sans-serif !default;
+$body-font-stack: 'Avenir Next', Georgia,Times,'Times New Roman', serif !default;
+
+/*===================================
+=              COLORS               =
+===================================*/
+
+$body-copy-color: #000000;
+$link-color: #000000;
+$header-color: #000000;
+$black: #04080e;
+$white: #ffffff;
+$grey: #bfbbb4;
+$dark-grey: #252525;
+$button-blue: #377fd1;
+$link-blue: #3477c8;
+$beige: #ffdf90;
+$grey: #a29f99;
+$tips-pink: #e84862;
+$leftover-green: #dcdd77;
+$light-grey: #d7d7d7;
+$tips-orange: #ffd05e;
+
+//Social icons
+$facebook: #3b5998;
+$twitter: #55acee;
+$pinterest: #bd081c;
+$instagram: #125688;
+
+/*===================================
+=            BREAKPOINTS            =
+===================================*/
+
+$bp-mobile-min: 320px;
+$bp-mobile-max: 767px;
+$bp-tablet-min: 768px;
+$bp-tablet-max: 959px;
+$bp-desktop-min: 960px;
+$bp-desktop-max: 1440px;
