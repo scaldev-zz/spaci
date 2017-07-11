@@ -1,0 +1,249 @@
+// A Responsive breakpoint utility
+@mixin breakpoint($point, $value: 0) {
+	@if $point == mobile {
+		@media (min-width: $bp-mobile-min) and (max-width: $bp-mobile-max){ @content; }
+	}
+	@else if $point == mobile-landscape {
+		@media (max-width: 480px) { @content; }
+	}
+	@else if $point == tablet {
+		@media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) { @content; }
+	}
+    @else if $point == tabletup {
+        @media (min-width: $bp-tablet-min) { @content; }
+    }
+	@else if $point == tablet-landscape {
+		@media (max-width: $bp-tablet-max) { @content; }
+	}
+	@else if $point == desktop {
+		@media (min-width: $bp-desktop-min) { @content; }
+	}
+	@else if $point == desktop-lrg {
+		@media (min-width: $bp-desktop-max) { @content; }
+	}
+	@else {
+		@media ($point: $value) { @content; }
+	}
+}
+
+// A Responsive breakpoint utility for between breakpint edge cases
+@mixin between-breakpoints($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+// Vertical Alginment for IE9+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/// Horizontal Alginment for IE9+
+@mixin horizontal-align {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+// //Mixin for using rem sizes with a px fallback
+
+// @mixin font-size($sizeValue: 1.6) {
+//   font-size: ($sizeValue * 10) + px;
+//   font-size: $sizeValue + rem;
+// }
+
+// @function em($px, $base: $base-font-size) {
+//     @return ($px / $base) * 1em;
+// }
+
+@mixin font-size($size, $lineheight: false) {
+    //Base font size defined in vars
+    $remSize: ($size / ($size * 0 + 1)) / $baseFontSize;
+    font-size: $size;
+    font-size: #{$remSize}rem;
+
+    @if($lineheight != false){
+        $remLineHeight: ($lineheight / ($lineheight* 0 + 1)) / $baseFontSize;
+        line-height:$lineheight;
+        line-height:#{$remLineHeight}rem;
+    }
+}
+
+/**
+ * Burger
+ *
+ * (---) top    -> &:before
+ * [---] middle -> &
+ * (---) bottom -> &:after
+ */
+
+
+/**
+ * Burger
+ */
+
+@mixin burger($width: 30px, $height: 5px, $gutter: 3px, $color: #000, $border-radius: 0, $transition-duration: .3s) {
+    $burger-height: $height !global;
+    $burger-gutter: $gutter !global;
+
+    position: relative;
+    margin-top: $height + $gutter;
+    margin-bottom: $height + $gutter;
+
+    &, &:before, &:after {
+        display: block;
+        width: $width;
+        height: $height;
+        background-color: $color;
+        @if $border-radius != 0 {
+            border-radius: $border-radius;
+        }
+
+        -webkit-transition-property: background-color, -webkit-transform;
+        -moz-transition-property: background-color, -moz-transform;
+        -o-transition-property: background-color, -o-transform;
+        transition-property: background-color, transform;
+
+        -webkit-transition-duration: $transition-duration;
+        -moz-transition-duration: $transition-duration;
+        -o-transition-duration: $transition-duration;
+        transition-duration: $transition-duration;
+    }
+
+    &:before, &:after {
+        position: absolute;
+        content: "";
+    }
+
+    &:before {
+        top: -($height + $gutter);
+    }
+
+    &:after {
+        top: $height + $gutter;
+    }
+}
+
+
+/**
+ * Select parts of the burger
+ */
+
+@mixin burger-parts {
+    &, &:before, &:after {
+        @content;
+    }
+}
+
+@mixin burger-top {
+    &:before {
+        @content;
+    }
+}
+
+@mixin burger-middle {
+    & {
+        @content;
+    }
+}
+
+@mixin burger-bottom {
+    &:after {
+        @content;
+    }
+}
+
+
+/**
+ * Burger animations
+ */
+
+@mixin burger-to-cross {
+    & {
+        background-color: transparent;
+    }
+    &:before {
+        -webkit-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+        -moz-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+        -ms-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+        -o-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+        transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+		background-color:#fff;
+    }
+    &:after {
+        -webkit-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+        -moz-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+        -ms-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+        -o-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+        transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+		background-color: #fff;
+    }
+}
+
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// =============================================================================
+// Magic parallax mixins
+// =============================================================================
+
+$parallax-perspective : 1 !default;
+$parallax-element     : "body" !default;
+$parallax-ios         : true !default;
+
+@mixin parallax-init(
+  $perspective  : $parallax-perspective,
+  $element      : $parallax-element,
+  $parallax-ios : $parallax-ios
+  ) {
+  @if $element == "body" {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  #{$element} {
+    overflow: auto;
+    perspective: $perspective * 1px;
+    transform-style: preserve-3d;
+    // Allows for smooth scrolling but disables parallax effects.
+    @if $parallax-ios == false {
+      -webkit-overflow-scrolling: touch;
+    }
+    // Preserve 3D
+    &, * {
+      transform-style: preserve-3d;
+    }
+  }
+}
+
+@mixin parallax(
+  $distance    : 0,
+  $perspective : $parallax-perspective
+  ) {
+  transform:
+    translateZ($distance * $perspective * 1px)
+    scale(abs($distance - 1))
+  ;
+  z-index: $distance * 1000;
+}

@@ -1,0 +1,25 @@
+/* SPACI  FONTS
+======================*/
+@font-face {
+	font-family: 'Avenir Next';
+	src: local('Avenit Next Pro Regular'), local('AvenirNext'),
+		url('../fonts/avenirnext/AvenirNextLTPro-Regular.otf') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Light';
+	src: local('Avenit Next Pro Light'), local('AvenirNext-lt'),
+		url('../fonts/avenirnext/AvenirNextLTPro-lt.otf') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: local('Avenit Next Pro Bold'), local('AvenirNext-Bold'),
+		url('../fonts/avenirnext/AvenirNextLTPro-Bold.otf') format('embedded-opentype');
+	font-weight: bold;
+	font-style: normal;
+}
