@@ -11,11 +11,11 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
-                            {{# each navLinks}}
+                          {{# each navLinks}}
                             <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
                                 <a href="{{ href }}">{{ label }}</a>
                             </li>
-                        {{/each}}
+                          {{/each}}
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         {{#if user}}
