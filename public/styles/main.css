@@ -5869,28 +5869,94 @@ button.close {
   max-width: 100%;
   height: auto; }
 
-<<<<<<< HEAD
-=======
+.padding {
+  padding: 10px; }
+
+.one-third {
+  display: inline-block;
+  padding: 0 3%;
+  width: 33%; }
+
 /*
 *    TYPOGRAPHY
 */
 body {
   color: #000000;
-  font: normal 125%/1.4 "Avenir Next", Georgia, Times, "Times New Roman", serif; }
+  font: normal 125%/1.4 #000000; }
   body h1, body h2 {
     font-family: 'Avenir Next';
-    font-weight: bold;
-    text-transform: uppercase; }
+    font-weight: bold; }
   body h3, body h4, body h5 {
     font-family: 'Avenir Next';
     color: #000000; }
   body a {
     color: #000000; }
+  body p {
+    font-size: 17px;
+    color: black; }
 
->>>>>>> a731719081d203b5a74e68bbe5e3e204552f6551
 /*    PAGES
 ==================*/
 /*    HOME STYLES
 ======================*/
 /*    DEFAULT MOBILE STYLES
 ================================*/
+/***** Hero ******/
+.section-hero {
+  max-height: 100%;
+  padding-left: 3%;
+  padding-right: 3%; }
+  .section-hero .section-hero__wrapper {
+    background-image: url("/images/spaci-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 672px;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    text-align: center; }
+    .section-hero .section-hero__wrapper .section-hero__text {
+      position: relative;
+      top: 18vw; }
+      .section-hero .section-hero__wrapper .section-hero__text h1, .section-hero .section-hero__wrapper .section-hero__text h2 {
+        text-transform: none; }
+      .section-hero .section-hero__wrapper .section-hero__text h1 {
+        font-size: 35px;
+        /* 31 */
+        line-height: 40px;
+        /*40*/
+        letter-spacing: -1px;
+        font-weight: bolder; }
+      .section-hero .section-hero__wrapper .section-hero__text h2 {
+        font-size: 28px;
+        font-weight: 400; }
+      .section-hero .section-hero__wrapper .section-hero__text .faites-button {
+        background-color: #f6aa44;
+        border-radius: 10px;
+        border: 1px solid #f6aa44;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        font-size: 27px;
+        font-weight: bolder;
+        letter-spacing: -1px;
+        padding: 8px 25px;
+        text-decoration: none; }
+
+/**** Intro *****/
+.section-intro {
+  background-color: #908e8f; }
+  .section-intro .section-intro__wrapper {
+    color: white;
+    padding: 30px 0 55px; }
+    .section-intro .section-intro__wrapper h2 {
+      text-align: center; }
+    .section-intro .section-intro__wrapper p {
+      color: white;
+      margin: 0 auto;
+      width: 45%; }
+
+/**** Our Services *****/
+.section-about {
+  background-color: #f5f4f4;
+  padding: 0 5%; }

@@ -4,11 +4,10 @@
 
 body {
   color: $body-copy-color;
-  font: normal 125% / 1.4 $body-font-stack;
+  font: normal 125% / 1.4 $header-color;
   h1, h2 {
       font-family: 'Avenir Next';
       font-weight: bold;
-      text-transform: uppercase;
   }
   h3, h4, h5 {
       font-family: 'Avenir Next';
@@ -17,6 +16,11 @@ body {
 
   a {
       color: $link-color;
+  }
+
+  p{
+      font-size: 17px;
+      color:black;
   }
 
 }

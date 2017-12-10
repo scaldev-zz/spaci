@@ -1,6 +1,67 @@
 /*    DEFAULT MOBILE STYLES
 ================================*/
 
-.home-hero {
-
+@media (max-width: 767px) {
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+/***** Hero ******/
+.section-hero{
+  max-height:100%;
+  padding-left:3%;
+  padding-right:3%;
+
+  .section-hero__wrapper{
+      background-image: url('/images/spaci-hero.jpg');
+      background-repeat: no-repeat;
+      background-size:contain;
+      height:672px;
+      max-width: 100%;
+      max-height:100%;
+      position: relative;
+      text-align: center;
+
+      .section-hero__text{
+        position: relative;
+        top: 18vw;
+
+          h1, h2{
+              text-transform: none;
+          }
+
+          h1{
+              font-size: 35px; /* 31 */
+              line-height: 40px; /*40*/
+              letter-spacing: -1px;
+              font-weight: bolder;
+          }
+
+          h2{
+              font-size: 28px;
+              font-weight: 400;
+          }
+
+          .faites-button{
+            background-color: #f6aa44;
+            border-radius: 10px;
+            border: 1px solid #f6aa44;
+            display: inline-block;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            font-size: 27px;
+            font-weight: bolder;
+            letter-spacing: -1px;
+            padding: 8px 25px;
+            text-decoration: none;
+          }
+       }//end section-hero__text
+  }//end section-hero__wrapper
+}//end section-hero
