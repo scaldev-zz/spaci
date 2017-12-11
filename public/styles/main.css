@@ -5855,28 +5855,9 @@ button.close {
 ===================================*/
 /*     BASE
 =====================*/
-#header {
-  margin-top: 30px; }
-
-#footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
-
-.gallery-image img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-.padding {
-  padding: 10px; }
-
-.one-third {
-  display: inline-block;
-  padding: 0 3%;
-  width: 33%; }
-
+/*=========================
+*	LAYOUT DEFAULT STYLES
+==========================*/
 /*
 *    TYPOGRAPHY
 */
@@ -5894,6 +5875,44 @@ body {
   body p {
     font-size: 17px;
     color: black; }
+
+/*    MODULES
+==================*/
+/*==========================
+*    HEADER DEFAULT STYLES
+===========================*/
+.header {
+  border-bottom: 1px solid #e3e3e3; }
+  .header.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    width: 100%; }
+  .header .container {
+    padding: 0; }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 140px; }
+  .header-content__links {
+    display: flex;
+    align-items: center; }
+    .header-content__links .link {
+      padding-right: 90px;
+      font-size: 17px; }
+      .header-content__links .link:last-child {
+        padding-right: 0; }
+      .header-content__links .link.active a {
+        border-color: #4A90E2; }
+      .header-content__links .link a {
+        border-bottom: 3px solid transparent;
+        transition: border-color 0.6s ease;
+        padding-bottom: 8px; }
+        .header-content__links .link a:hover {
+          color: #04080e;
+          text-decoration: none;
+          border-color: #4A90E2; }
 
 /*    PAGES
 ==================*/
@@ -5918,7 +5937,8 @@ body {
     .section-hero .section-hero__wrapper .section-hero__text {
       position: relative;
       top: 18vw; }
-      .section-hero .section-hero__wrapper .section-hero__text h1, .section-hero .section-hero__wrapper .section-hero__text h2 {
+      .section-hero .section-hero__wrapper .section-hero__text h1,
+      .section-hero .section-hero__wrapper .section-hero__text h2 {
         text-transform: none; }
       .section-hero .section-hero__wrapper .section-hero__text h1 {
         font-size: 35px;
@@ -5942,21 +5962,3 @@ body {
         letter-spacing: -1px;
         padding: 8px 25px;
         text-decoration: none; }
-
-/**** Intro *****/
-.section-intro {
-  background-color: #908e8f; }
-  .section-intro .section-intro__wrapper {
-    color: white;
-    padding: 30px 0 55px; }
-    .section-intro .section-intro__wrapper h2 {
-      text-align: center; }
-    .section-intro .section-intro__wrapper p {
-      color: white;
-      margin: 0 auto;
-      width: 45%; }
-
-/**** Our Services *****/
-.section-about {
-  background-color: #f5f4f4;
-  padding: 0 5%; }

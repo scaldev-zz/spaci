@@ -1,16 +1,26 @@
-<div id="header">
+<div class="header">
     <div class="container">
-        <div role="navigation" class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
+        <div role="navigation" class="header-content">
+            <div class="header-content_logo">
+                <a href="/" class=""><img src="/images/spaci-logo.png" class="logo-img" alt="spaci"/></a>
+            </div>
+            <div class="header-content__links">
+                  {{# each navLinks}}
+                    <div {{#ifeq ../section key}} class="link active"{{else}}class="link"{{/ifeq}}>
+                        <a href="{{ href }}">{{ label }}</a>
+                    </div>
+                  {{/each}}
+            </div>
+            <!-- <div class="container-fluid">
+                <div class="">
                     <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <a href="/" class="navbar-brand">Spaci</a>
+                    <a href="/" class=""><img src="/images/spaci-logo.png" class="logo-img" alt="spaci"/></a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left">
+                    <ul class="">
                           {{# each navLinks}}
                             <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
                                 <a href="{{ href }}">{{ label }}</a>
@@ -25,7 +35,7 @@
                         {{/if}}
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
