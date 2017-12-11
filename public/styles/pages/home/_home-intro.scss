@@ -1,0 +1,19 @@
+/**** Intro *****/
+.section-intro{
+  background-color:#908e8f;
+
+  .section-intro__wrapper{
+
+    color:white;
+    padding:30px 0 55px;
+
+      h2{
+        text-align: center;
+      }
+      p{
+          color:white;
+          margin: 0 auto;
+          width:45%;
+      }
+    }//end section-intro__wrapper
+}//end section-intro
