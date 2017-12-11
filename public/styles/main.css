@@ -5882,7 +5882,9 @@ body {
 *    HEADER DEFAULT STYLES
 ===========================*/
 .header {
-  border-bottom: 1px solid #e3e3e3; }
+  border-bottom: 1px solid #e3e3e3;
+  top: -140px;
+  transition: top 0.6s ease-in-out; }
   .header.sticky {
     position: fixed;
     top: 0;
