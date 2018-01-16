@@ -1,0 +1,58 @@
+/*==========================
+*    HEADER DEFAULT STYLES
+===========================*/
+
+.header {
+    border-bottom: 1px solid #e3e3e3;
+    top:-140px;
+    transition: top 0.6s ease-in-out;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: $white;
+        width: 100%;
+    }
+    .container {
+        padding:0;
+    }
+
+    &-content {
+        display:flex;
+        justify-content: space-between;
+        height:140px;
+    }
+
+    &-content__links {
+        display: flex;
+        align-items: center;
+
+        .link {
+            padding-right:90px;
+            font-size:17px;
+
+            &:last-child {
+                padding-right:0;
+            }
+
+            &.active {
+                a {
+                    border-color: #4A90E2;
+                }
+            }
+
+            a {
+                border-bottom: 3px solid transparent;
+                transition: border-color 0.6s ease;
+                padding-bottom: 8px;
+
+                &:hover {
+                    color: $black;
+                    text-decoration: none;
+                    border-color: #4A90E2;
+                }
+            }
+        }
+    }
+}
