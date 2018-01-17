@@ -21,7 +21,8 @@
 		<![endif]-->
 
 	</head>
-	<body>
+	<!--NOTE: need dynamic code to grab id of whatever page served -->
+	<body id="home">
 		{{> global/header }}
 		<!--<div id="body" class="col-offset-padding-1-left col-offset-padding-1-right">-->
 		<div id="body">
@@ -75,4 +76,18 @@
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 		{{{isAdminEditorJS user}}}
 	</body>
+	<script type="text/javascript">
+		(function() {
+		  var body = document.body;
+		  var burgerMenu = document.getElementsByClassName('b-menu')[0];
+		  var burgerContain = document.getElementsByClassName('b-container')[0];
+		  var burgerNav = document.getElementsByClassName('b-nav')[0];
+
+		  burgerMenu.addEventListener('click', function toggleClasses() {
+		    [body, burgerContain, burgerNav].forEach(function (el) {
+		      el.classList.toggle('open');
+		    });
+		  }, false);
+		})();
+	</script>
 </html>

@@ -1,0 +1,76 @@
+/*    DEFAULT MOBILE STYLES
+================================*/
+/* Breakpoints for smooth transition of hero image */
+@media (max-width: 400px) {
+	#section-hero__wrapper{
+			height:225px !important;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+	#section-hero__wrapper{
+			height:250px !important;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+	#section-hero__wrapper{
+			height:275px !important;
+	}
+}
+
+@media (max-width: 650px) {
+	#home{
+		#section-hero{
+			#section-hero__wrapper{
+				height:315px;
+
+				#section-hero__text{
+					h1{
+						font-size: 3vw !important;
+						line-height: 3vw !important;
+						letter-spacing: 0px !important;
+					}
+					h2{
+						font-size: 2vw !important;
+					}
+					.faites-button{
+						font-size: 2vw !important;
+						letter-spacing: 0px !important;
+					}
+				}
+			}
+		}
+		.one-third{
+			width: 100% !important;
+		}
+	}
+}
+
+/* Burger Menu  */
+@media (max-width:899px){
+  #home{
+    .header{
+      .header-content__links{  display:none; }
+      .b-container{   display: block;   }
+    }
+  }
+}
+
+@media (min-width:900px){
+  #home{
+    .header{
+      .b-container{ display: none; }
+    }
+  }
+}
+
+@media (max-width:768px){
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

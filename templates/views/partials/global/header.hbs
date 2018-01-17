@@ -10,7 +10,25 @@
                         <a href="{{ href }}">{{ label }}</a>
                     </div>
                   {{/each}}
-            </div>
+           </div>
+           <!-- DO NOT DELETE -->
+           <!-- Navigation for Burger-Icon-->
+           <div class="b-nav">
+           {{# each navLinks}}
+             <div {{#ifeq ../section key}} class="link active"{{else}}class="link"{{/ifeq}}>
+                 <li><a class="b-link" href="{{ href }}">{{ label }}</a></li>
+             </div>
+           {{/each}}
+          </div>
+
+          <!-- Burger-Icon -->
+          <div class="b-container">
+           <div class="b-menu">
+             <div class="b-bun b-bun--top"></div>
+             <div class="b-bun b-bun--mid"></div>
+             <div class="b-bun b-bun--bottom"></div>
+           </div>
+         </div>
             <!-- <div class="container-fluid">
                 <div class="">
                     <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">

@@ -1,3 +1,26 @@
 /*    HOME STYLES
 ======================*/
+
+//Primary colors palette
+// -------------------------
+$white:          #FFFFFF;
+$black:          #000000;
+$orange:         #f6aa44;
+$lightGray:      #908e8f;
+//Primary padding
+// -------------------------
+$padding-top:  3%;
+$padding-bottom:  3%;
+//H2 Margin
+$normal:        400;
+//Overwriting Bootstrap margin-top on h2 for homepage only -- CAN BE REMOVED
+// -------------------------
+#home{
+  h2{
+    margin:0px;
+  }
+}
+
 @import "home/home-hero";
+@import "home/home-intro";
+@import "home/home-services";

@@ -1,6 +1,9 @@
 /*
 *    TYPOGRAPHY
 */
+$h2-padding: 1vh 0 5vh;
+$h2-letterspacing: 0.8px;
+$font-normal: 400;
 
 body {
   color: $body-copy-color;
@@ -23,4 +26,17 @@ body {
       color:black;
   }
 
+}
+
+#home {
+
+    section{
+
+      #section-intro__wrapper h2, #section-services__wrapper h2{
+        text-align: center;
+        padding: $h2-padding;
+        letter-spacing: $h2-letterspacing;
+        font-weight: $font-normal;
+      }
+  }
 }

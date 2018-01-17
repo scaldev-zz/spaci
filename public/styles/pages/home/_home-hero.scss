@@ -1,16 +1,10 @@
-/*    DEFAULT MOBILE STYLES
-================================*/
-@media (max-width: 767px) {}
-@media (min-width: 768px) and (max-width: 991px) {}
-@media (min-width: 992px) and (max-width: 1199px) {}
-@media (min-width: 1200px) {}
 /***** Hero ******/
-.section-hero {
+#section-hero {
 	max-height: 100%;
 	padding-left: 3%;
 	padding-right: 3%;
 
-	.section-hero__wrapper {
+	#section-hero__wrapper {
 		background-image: url('/images/spaci-hero.jpg');
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -20,7 +14,7 @@
 		position: relative;
 		text-align: center;
 
-		.section-hero__text {
+		#section-hero__text {
 			position: relative;
 			top: 18vw;
 
@@ -44,12 +38,12 @@
 			}
 
 			.faites-button {
-				background-color: #f6aa44;
+				background-color: $orange;
 				border-radius: 10px;
-				border: 1px solid #f6aa44;
+				border: 1px solid $orange;
 				display: inline-block;
 				cursor: pointer;
-				color: rgb(255, 255, 255);
+				color: $white;
 				font-size: 27px;
 				font-weight: bolder;
 				letter-spacing: -1px;
