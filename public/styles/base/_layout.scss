@@ -1,4 +1,4 @@
-
+/* variables for burger menu */
 $color-stack:
   (group: primary, id: normal, color: #fff),
   (group: complement, id: normal, color: #444);
@@ -34,22 +34,47 @@ $b-txt-pad-top: ($b-margin-top + $b-height + $b-txt-pad); //Top margin for first
 $b-bun-width-half: ($b-bun-width / 2); //Half bun width used for calculation
 $b-pad-left: ($b-height / 2 - $b-bun-width-half - 2); //Horizontally centers bun in menu
 $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in menu
-
+//Primary padding
+// -------------------------
+$section-padding-top:  6vh;
+$section-padding-bottom:  6vh;
+$section-padding-left: 4vw;
+$section-padding-right: 4vw;
+//H2 Margin
+$normal:        400;
 
 /*=========================
 *	LAYOUT DEFAULT STYLES
 ==========================*/
 body{
-
   #body{
-
     img{max-width: 100%;}
 
     .one-third{
-      display: inline-block;
-       padding:0 3%;
        width: 33%;
     }
+
+    .one-half{
+      width:48%;
+    }
+
+    .one-third, .one-half{
+      display: inline-block;
+      padding:0 3%;
+
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+    }
+
+    .section_wrapper{
+      padding-bottom: $section-padding-bottom;
+      padding-left: $section-padding-left;
+      padding-right: $section-padding-right;
+      padding-top: $section-padding-top;
+    }
+
   }
 }
 
@@ -259,4 +284,17 @@ body {
       color: color(complement);
     }
   }
+}
+
+/*=========================
+*	BUTTON
+==========================*/
+.button{
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 8px 25px;
+  text-decoration: none;
 }

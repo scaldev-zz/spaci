@@ -7,12 +7,6 @@ $white:          #FFFFFF;
 $black:          #000000;
 $orange:         #f6aa44;
 $lightGray:      #908e8f;
-//Primary padding
-// -------------------------
-$padding-top:  3%;
-$padding-bottom:  3%;
-//H2 Margin
-$normal:        400;
 //Overwriting Bootstrap margin-top on h2 for homepage only -- CAN BE REMOVED
 // -------------------------
 #home{
@@ -24,3 +18,4 @@ $normal:        400;
 @import "home/home-hero";
 @import "home/home-intro";
 @import "home/home-services";
+@import "home/home-how_to_help"

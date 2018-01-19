@@ -29,10 +29,8 @@ body {
 }
 
 #home {
-
     section{
-
-      #section-intro__wrapper h2, #section-services__wrapper h2{
+        h2{
         text-align: center;
         padding: $h2-padding;
         letter-spacing: $h2-letterspacing;

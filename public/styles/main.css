@@ -5855,6 +5855,7 @@ button.close {
 ===================================*/
 /*     BASE
 =====================*/
+/* variables for burger menu */
 /*=========================
 *	LAYOUT DEFAULT STYLES
 ==========================*/
@@ -5862,9 +5863,23 @@ body #body img {
   max-width: 100%; }
 
 body #body .one-third {
-  display: inline-block;
-  padding: 0 3%;
   width: 33%; }
+
+body #body .one-half {
+  width: 48%; }
+
+body #body .one-third, body #body .one-half {
+  display: inline-block;
+  padding: 0 3%; }
+  body #body .one-third img, body #body .one-half img {
+    display: block;
+    margin: 0 auto; }
+
+body #body .section_wrapper {
+  padding-bottom: 6vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 6vh; }
 
 /*=========================
 *	BURGER MENU
@@ -6015,6 +6030,18 @@ body.open:after {
   .b-container.open .b-brand {
     color: #444444; }
 
+/*=========================
+*	BUTTON
+==========================*/
+.button {
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 8px 25px;
+  text-decoration: none; }
+
 /*
 *    TYPOGRAPHY
 */
@@ -6033,7 +6060,7 @@ body {
     font-size: 17px;
     color: black; }
 
-#home section #section-intro__wrapper h2, #home section #section-services__wrapper h2 {
+#home section h2 {
   text-align: center;
   padding: 1vh 0 5vh;
   letter-spacing: 0.8px;
@@ -6087,11 +6114,11 @@ body {
   margin: 0px; }
 
 /***** Hero ******/
-#section-hero {
+body #body #section-hero {
   max-height: 100%;
   padding-left: 3%;
   padding-right: 3%; }
-  #section-hero #section-hero__wrapper {
+  body #body #section-hero #section-hero_wrapper {
     background-image: url("/images/spaci-hero.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -6099,35 +6126,32 @@ body {
     max-width: 100%;
     max-height: 100%;
     position: relative;
+    padding: 0px;
     text-align: center; }
-    #section-hero #section-hero__wrapper #section-hero__text {
+    body #body #section-hero #section-hero_wrapper #section-hero_text {
       position: relative;
       top: 18vw; }
-      #section-hero #section-hero__wrapper #section-hero__text h1,
-      #section-hero #section-hero__wrapper #section-hero__text h2 {
+      body #body #section-hero #section-hero_wrapper #section-hero_text h1,
+      body #body #section-hero #section-hero_wrapper #section-hero_text h2 {
         text-transform: none; }
-      #section-hero #section-hero__wrapper #section-hero__text h1 {
+      body #body #section-hero #section-hero_wrapper #section-hero_text h1 {
         font-size: 35px;
         /* 31 */
         line-height: 40px;
         /*40*/
         letter-spacing: -1px;
         font-weight: bolder; }
-      #section-hero #section-hero__wrapper #section-hero__text h2 {
+      body #body #section-hero #section-hero_wrapper #section-hero_text h2 {
         font-size: 28px;
-        font-weight: 400; }
-      #section-hero #section-hero__wrapper #section-hero__text .faites-button {
+        font-weight: 400;
+        padding: 5px; }
+      body #body #section-hero #section-hero_wrapper #section-hero_text .faites-button {
         background-color: #f6aa44;
-        border-radius: 10px;
         border: 1px solid #f6aa44;
         display: inline-block;
-        cursor: pointer;
         color: #FFFFFF;
         font-size: 27px;
-        font-weight: bolder;
-        letter-spacing: -1px;
-        padding: 8px 25px;
-        text-decoration: none; }
+        letter-spacing: -1px; }
 
 /**** Intro *****/
 /*set variable of padding of all pages similar to what we do
@@ -6136,28 +6160,46 @@ set color variable to white
 */
 #home #section-intro {
   background-color: #908e8f;
-  padding-bottom: 3%;
-  padding-top: 3%;
   padding-left: 25%;
   padding-right: 25%; }
-  #home #section-intro #section-intro__wrapper {
+  #home #section-intro #section-intro_wrapper {
     color: #FFFFFF; }
-    #home #section-intro #section-intro__wrapper p {
+    #home #section-intro #section-intro_wrapper p {
       color: #FFFFFF;
       margin: 0 auto;
       width: 100%; }
 
 /**** Our Services *****/
 #home #section-services {
-  background-color: #f5f4f4;
-  padding-bottom: 3%;
-  padding-top: 3%;
-  padding-left: 5%;
-  padding-right: 5%; }
-  #home #section-services #section-services__wrapper {
+  background-color: #f5f4f4; }
+  #home #section-services #section-services_wrapper {
     text-align: center; }
-    #home #section-services #section-services__wrapper .one-third h2 {
+    #home #section-services #section-services_wrapper .one-third h2 {
       padding: 2vh; }
+
+/***** how to help ******/
+body #body #section-help #section-help_wrapper #section-help_text .headline {
+  text-align: center; }
+  body #body #section-help #section-help_wrapper #section-help_text .headline h2 {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2vw; }
+  body #body #section-help #section-help_wrapper #section-help_text .headline img.banner {
+    width: 30%;
+    max-width: 100%; }
+
+body #body #section-help #section-help_wrapper #section-help_text .one-half h2 {
+  padding: 2vh; }
+
+body #body #section-help #section-help_wrapper #section-help_text .one-half button {
+  background-color: #e20707;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  margin-top: 8vh;
+  padding: 12px 20px;
+  font-size: 18px;
+  letter-spacing: 1.5px; }
 
 /*   MOBILE
 ==================*/
@@ -6165,30 +6207,114 @@ set color variable to white
 ================================*/
 /* Breakpoints for smooth transition of hero image */
 @media (max-width: 400px) {
-  #section-hero__wrapper {
-    height: 225px !important; } }
+  #section-hero_wrapper {
+    height: 235px !important; } }
 
-@media (min-width: 401px) and (max-width: 450px) {
-  #section-hero__wrapper {
-    height: 250px !important; } }
-
-@media (min-width: 401px) and (max-width: 450px) {
-  #section-hero__wrapper {
-    height: 275px !important; } }
-
-@media (max-width: 650px) {
-  #home #section-hero #section-hero__wrapper {
-    height: 315px; }
-    #home #section-hero #section-hero__wrapper #section-hero__text h1 {
-      font-size: 3vw !important;
+@media (max-width: 450px) {
+  #section-hero_wrapper {
+    height: 250px !important; }
+    #section-hero_wrapper #section-hero_text .button {
+      padding: 5px;
+      border-radius: 2px; }
+    #section-hero_wrapper #section-hero_text h1 {
+      font-size: 3.5vw !important;
       line-height: 3vw !important;
-      letter-spacing: 0px !important; }
-    #home #section-hero #section-hero__wrapper #section-hero__text h2 {
+      margin-bottom: 0px;
+      letter-spacing: 0.5px !important; } }
+
+/* Hero image height shift */
+@media (min-width: 450px) and (max-width: 530px) {
+  #section-hero_wrapper {
+    height: 275px !important; }
+    #section-hero_wrapper h1 {
+      margin-bottom: 0px !important; } }
+
+@media (min-width: 521px) and (max-width: 545px) {
+  #section-hero_wrapper {
+    height: 300px !important; }
+    #section-hero_wrapper h1 {
+      margin-bottom: 0.5px !important; } }
+
+@media (min-width: 546px) and (max-width: 600px) {
+  #section-hero_wrapper {
+    height: 325px !important; }
+    #section-hero_wrapper h1 {
+      margin-bottom: 0.9px !important; } }
+
+/* New Shit */
+@media (max-width: 650px) {
+  body#home #body #section-hero #section-hero_wrapper {
+    height: 375px; }
+    body#home #body #section-hero #section-hero_wrapper #section-hero_text h1 {
+      font-size: 3vw;
+      line-height: 3vw;
+      letter-spacing: 0px; }
+    body#home #body #section-hero #section-hero_wrapper #section-hero_text h2 {
       font-size: 2vw !important; }
-    #home #section-hero #section-hero__wrapper #section-hero__text .faites-button {
+    body#home #body #section-hero #section-hero_wrapper #section-hero_text .faites-button {
       font-size: 2vw !important;
       letter-spacing: 0px !important; }
-  #home .one-third {
+  body#home #body #section-intro {
+    padding-left: 8% !important;
+    padding-right: 8% !important; } }
+
+/* Hero image height shift */
+@media (min-width: 650px) and (max-width: 700px) {
+  #section-hero_wrapper {
+    height: 375px !important; } }
+
+@media (min-width: 701px) and (max-width: 730px) {
+  #section-hero_wrapper {
+    height: 400px !important; } }
+
+@media (min-width: 731px) and (max-width: 780px) {
+  #section-hero_wrapper {
+    height: 450px !important; } }
+
+/* New Shit */
+@media (min-width: 651px) and (max-width: 825px) {
+  body#home #body #section-hero #section-hero_wrapper {
+    height: 475px; }
+    body#home #body #section-hero #section-hero_wrapper #section-hero_text h1 {
+      font-size: 3vw;
+      line-height: 3vw;
+      letter-spacing: 0px; }
+    body#home #body #section-hero #section-hero_wrapper #section-hero_text h2 {
+      font-size: 2vw !important; }
+    body#home #body #section-hero #section-hero_wrapper #section-hero_text .faites-button {
+      font-size: 2vw !important;
+      letter-spacing: 0px !important; }
+  body#home #body #section-intro {
+    padding-left: 8% !important;
+    padding-right: 8% !important; } }
+
+/* Hero image height shift */
+@media (min-width: 826px) and (max-width: 900px) {
+  #section-hero_wrapper {
+    height: 500px !important; }
+  #section-intro {
+    padding-left: 8% !important;
+    padding-right: 8% !important; } }
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  #section-hero_wrapper {
+    height: 550px !important; } }
+
+/* New Shit */
+@media (min-width: 826px) and (max-width: 1160px) {
+  body#home #body #section-hero #section-hero_wrapper #section-hero_text h1 {
+    font-size: 3vw;
+    line-height: 3vw;
+    letter-spacing: 0px; }
+  body#home #body #section-hero #section-hero_wrapper #section-hero_text h2 {
+    font-size: 2vw !important; }
+  body#home #body #section-hero #section-hero_wrapper #section-hero_text .faites-button {
+    font-size: 2vw !important;
+    letter-spacing: 0px !important; } }
+
+/* Set specific dimensions to full-width */
+@media (max-width: 850px) {
+  .one-third {
     width: 100% !important; } }
 
 /* Burger Menu  */

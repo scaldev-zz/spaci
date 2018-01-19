@@ -1,10 +1,10 @@
-/***** Hero ******/
+/***** lastest stories ******/
 body{
   #body{
 		#section-hero {
 			max-height: 100%;
-      padding-left: 3%;
-      padding-right: 3%;
+			padding-left: 3%;
+			padding-right: 3%;
 
 			#section-hero_wrapper {
 				background-image: url('/images/spaci-hero.jpg');
@@ -14,8 +14,7 @@ body{
 				max-width: 100%;
 				max-height: 100%;
 				position: relative;
-        padding: 0px;
-        text-align: center;
+				text-align: center;
 
 				#section-hero_text {
 					position: relative;
@@ -38,22 +37,23 @@ body{
 					h2 {
 						font-size: 28px;
 						font-weight: 400;
-            padding: 5px;
 					}
 
 					.faites-button {
 						background-color: $orange;
+						border-radius: 10px;
 						border: 1px solid $orange;
 						display: inline-block;
-            color: $white;
+						cursor: pointer;
+						color: $white;
 						font-size: 27px;
+						font-weight: bolder;
 						letter-spacing: -1px;
+						padding: 8px 25px;
+						text-decoration: none;
 					}
-				}
-				//end section-hero__text
-			}
-			//end section-hero__wrapper
-		}
-		//end section-hero
+				}			//end section-hero__text
+			}  //end section-hero__wrapper
+		} //end section-hero
 	}
 }

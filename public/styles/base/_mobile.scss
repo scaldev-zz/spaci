@@ -2,48 +2,190 @@
 ================================*/
 /* Breakpoints for smooth transition of hero image */
 @media (max-width: 400px) {
-	#section-hero__wrapper{
-			height:225px !important;
+	#section-hero_wrapper{
+			height:235px !important;
+
 	}
 }
 
-@media (min-width: 401px) and (max-width: 450px) {
-	#section-hero__wrapper{
+@media (max-width: 450px) {
+	#section-hero_wrapper{
 			height:250px !important;
+
+			#section-hero_text{
+				.button{
+					padding: 5px;
+					border-radius: 2px;
+				}
+
+				h1{
+					font-size: 3.5vw !important;
+					line-height: 3vw !important;
+					margin-bottom: 0px;
+					letter-spacing: 0.5px !important;
+				}
+			}
 	}
 }
 
-@media (min-width: 401px) and (max-width: 450px) {
-	#section-hero__wrapper{
+/* Hero image height shift */
+@media (min-width: 450px) and (max-width: 530px) {
+	#section-hero_wrapper{
 			height:275px !important;
+
+			h1{margin-bottom: 0px !important;}
 	}
 }
 
-@media (max-width: 650px) {
-	#home{
-		#section-hero{
-			#section-hero__wrapper{
-				height:315px;
+@media (min-width: 521px) and (max-width: 545px) {
+	#section-hero_wrapper{
+			height:300px !important;
 
-				#section-hero__text{
-					h1{
-						font-size: 3vw !important;
-						line-height: 3vw !important;
-						letter-spacing: 0px !important;
-					}
-					h2{
-						font-size: 2vw !important;
-					}
-					.faites-button{
-						font-size: 2vw !important;
-						letter-spacing: 0px !important;
+			h1{margin-bottom: 0.5px !important;}
+	}
+}
+
+@media (min-width: 546px) and (max-width: 600px) {
+	#section-hero_wrapper{
+			height:325px !important;
+
+			h1{margin-bottom: 0.9px !important;}
+	}
+}
+
+
+/* New Shit */
+@media (max-width: 650px) {
+	body#home{
+		#body{
+			#section-hero{
+				#section-hero_wrapper{
+					height:375px;
+
+					#section-hero_text{
+						h1{
+							font-size: 3vw;
+							line-height: 3vw;
+							letter-spacing: 0px;
+						}
+						h2{
+							font-size: 2vw !important;
+						}
+						.faites-button{
+							font-size: 2vw !important;
+							letter-spacing: 0px !important;
+						}
 					}
 				}
 			}
+			#section-intro{
+				padding-left: 8% !important;
+				padding-right: 8% !important;
+			}
 		}
-		.one-third{
-			width: 100% !important;
+	}
+}
+
+/* Hero image height shift */
+@media (min-width: 650px) and (max-width: 700px) {
+	#section-hero_wrapper{
+			height:375px !important;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 730px) {
+	#section-hero_wrapper{
+			height:400px !important;
+	}
+}
+
+@media (min-width: 731px) and (max-width: 780px) {
+	#section-hero_wrapper{
+			height:450px !important;
+	}
+}
+/* New Shit */
+@media (min-width: 651px) and (max-width: 825px) {
+	body#home{
+		#body{
+			#section-hero{
+				#section-hero_wrapper{
+					height:475px;
+
+					#section-hero_text{
+						h1{
+							font-size: 3vw;
+							line-height: 3vw;
+							letter-spacing: 0px;
+						}
+						h2{
+							font-size: 2vw !important;
+						}
+						.faites-button{
+							font-size: 2vw !important;
+							letter-spacing: 0px !important;
+						}
+					}
+				}
+			}
+			#section-intro{
+				padding-left: 8% !important;
+				padding-right: 8% !important;
+			}
+
 		}
+	}
+}
+
+/* Hero image height shift */
+@media (min-width:826px) and (max-width: 900px){
+	#section-hero_wrapper{
+		height:500px !important;
+	}
+	#section-intro{
+		padding-left: 8% !important;
+		padding-right: 8% !important;
+	}
+}
+
+@media (min-width:901px) and (max-width: 1000px){
+	#section-hero_wrapper{
+		height:550px !important;
+	}
+}
+
+/* New Shit */
+@media (min-width: 826px) and (max-width: 1160px) {
+	body#home{
+		#body{
+			#section-hero{
+				#section-hero_wrapper{
+
+					#section-hero_text{
+						h1{
+							font-size: 3vw;
+							line-height: 3vw;
+							letter-spacing: 0px;
+						}
+						h2{
+							font-size: 2vw !important;
+						}
+						.faites-button{
+							font-size: 2vw !important;
+							letter-spacing: 0px !important;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+/* Set specific dimensions to full-width */
+@media (max-width:850px){
+	.one-third{
+		width: 100% !important;
 	}
 }
 

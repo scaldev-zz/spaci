@@ -4,16 +4,12 @@ padding: 1% 25%;
 set color variable to white
 */
 #home {
-    
   #section-intro{
     background-color: $lightGray;
-    padding-bottom: $padding-bottom;
-    padding-top: $padding-top;
     padding-left:25%;
     padding-right:25%,;
 
-    #section-intro__wrapper{
-
+    #section-intro_wrapper{
       color:$white;
 
         p{
@@ -23,5 +19,4 @@ set color variable to white
         }
       }//end section-intro__wrapper
   }//end section-intro
-
 }

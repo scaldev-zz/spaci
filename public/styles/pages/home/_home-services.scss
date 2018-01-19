@@ -1,25 +1,15 @@
 /**** Our Services *****/
 #home {
-
   #section-services{
-
     background-color:#f5f4f4;
-    padding-bottom: $padding-bottom;
-    padding-top: $padding-top;
-    padding-left: 5%;
-    padding-right: 5%;
 
-     #section-services__wrapper{
-
+     #section-services_wrapper{
         text-align: center;
 
         .one-third{
-
             h2{ padding:2vh;}
 
         }
-
      }
-
   }
 }
