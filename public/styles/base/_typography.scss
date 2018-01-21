@@ -7,6 +7,7 @@ $font-normal: 400;
 
 body {
   color: $body-copy-color;
+  font-family: 'Avenir Next';
   font: normal 125% / 1.4 $header-color;
   h1, h2 {
       font-family: 'Avenir Next';
@@ -18,23 +19,14 @@ body {
   }
 
   a {
+      font-family: 'Avenir Next';
       color: $link-color;
   }
 
   p{
+      font-family: 'Avenir Next';
       font-size: 17px;
       color:black;
   }
 
-}
-
-#home {
-    section{
-        h2{
-        text-align: center;
-        padding: $h2-padding;
-        letter-spacing: $h2-letterspacing;
-        font-weight: $font-normal;
-      }
-  }
 }

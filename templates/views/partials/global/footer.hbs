@@ -1,8 +1,50 @@
 <div class="footer">
-    {{#if user}}
+    <div class="columns">
+        <div class="column">
+            <ul class="link-list">
+                {{# each navLinks}}
+                  <li {{#ifeq ../section key}} class="link-item active"{{else}}class="link-item"{{/ifeq}}>
+                      <a class="link" href="{{ href }}">{{ label }}</a>
+                  </li>
+                {{/each}}
+                <li {{#ifeq ../section key}} class="link-item active"{{else}}class="link-item"{{/ifeq}}>
+                    <a class="link" href="{{ href }}">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="column subscription">
+            <h3>Vous voulez en savoir plus?</h3>
+            <p>Subscribe to our news letter to receive the latest news and updates on our cause and animals</p>
+            <form class="subscription-form">
+                <input type="text" name="email" placeholder="example@email.com">
+                <button class="subscription-button" >Subscribe</button>
+            </form>
+        </div>
+        <div class="column location">
+            <h3>Notre emplacement</h3>
+            <div id="map"></div>
+             <script>
+               function initMap() {
+                 var uluru = {lat: -25.363, lng: 131.044};
+                 var map = new google.maps.Map(document.getElementById('map'), {
+                   zoom: 4,
+                   center: uluru
+                 });
+                 var marker = new google.maps.Marker({
+                   position: uluru,
+                   map: map
+                 });
+               }
+             </script>
+             <script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBSO8Csbw9eeoR4VIaqaIUYa4CtT5N0As&callback=initMap">
+             </script>
+        </div>
+    </div>
+    <!-- {{#if user}}
     <li><a href="/keystone/signout">Sign Out</a></li>
     {{else}}
     <li><a href="/keystone/signin">Sign In</a></li>
-    {{/if}}
+    {{/if}} -->
     <p class="copyright">© <script type="text/javascript">document.write (new Date().getFullYear());</script> Secours et Protection des Animaux de C&Auml;te d'lvoire. All rights reserved.</p>
 </div>

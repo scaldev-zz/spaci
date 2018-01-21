@@ -9,9 +9,15 @@ $orange:         #f6aa44;
 $lightGray:      #908e8f;
 //Overwriting Bootstrap margin-top on h2 for homepage only -- CAN BE REMOVED
 // -------------------------
-#home{
-  h2{
-    margin:0px;
+#home {
+    section{
+        h2{
+            margin:0px;
+        text-align: center;
+        padding: $h2-padding;
+        letter-spacing: $h2-letterspacing;
+        font-weight: $font-normal;
+      }
   }
 }
 
