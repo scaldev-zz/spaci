@@ -1,59 +1,65 @@
-/***** lastest stories ******/
+/***** latest stories ******/
 body{
   #body{
-		#section-hero {
-			max-height: 100%;
-			padding-left: 3%;
-			padding-right: 3%;
+		#section-stories {
+      background-color:$lightGray;
+			#section-stories_wrapper {
+				#section-stories_text {
+          .headline{
+            text-align: center;
 
-			#section-hero_wrapper {
-				background-image: url('/images/spaci-hero.jpg');
-				background-repeat: no-repeat;
-				background-size: contain;
-				height: 672px;
-				max-width: 100%;
-				max-height: 100%;
-				position: relative;
-				text-align: center;
+            h2{
+              display: inline-block;
+              vertical-align: middle;
+              padding: 2vw;
+            }
+            img.banner{
+              width: 33%;
+              max-width: 100%;
+            }
+          }
+          .one-third{
+            max-width: 100%;
+            vertical-align: top;
+              h2{
+                padding: 2vh;
+            }
 
-				#section-hero_text {
-					position: relative;
-					top: 18vw;
+          }
+          .section-top{
+            background-image: url(http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg);
+            background-size:cover;
+            height:255px;
 
-					h1,
-					h2 {
-						text-transform: none;
-					}
+            p{
+              background-color:$blue;
+              box-shadow: 2px 5px rgba(0, 0, 0, 0.2);
+              color:$white;
+              padding:12px 15px;
+              display:inline-block;
+            }
 
-					h1 {
-						font-size: 35px;
-						/* 31 */
-						line-height: 40px;
-						/*40*/
-						letter-spacing: -1px;
-						font-weight: bolder;
-					}
+          }
+          .section-bottom{
+            padding:10px;
+            background-color:$white;
 
-					h2 {
-						font-size: 28px;
-						font-weight: 400;
-					}
-
-					.faites-button {
-						background-color: $orange;
-						border-radius: 10px;
-						border: 1px solid $orange;
-						display: inline-block;
-						cursor: pointer;
-						color: $white;
-						font-size: 27px;
-						font-weight: bolder;
-						letter-spacing: -1px;
-						padding: 8px 25px;
-						text-decoration: none;
-					}
-				}			//end section-hero__text
-			}  //end section-hero__wrapper
-		} //end section-hero
+            .title{
+              font-weight:bold;
+              color:#darkGray;
+              font-size: 16px;
+              padding-bottom: 0px;
+              margin-bottom: 1px;
+            }
+            p{font-size: smaller;}
+            p:last-child{
+                text-align:right;
+                font-size:14px;
+                letter-spacing:0.5px;
+            }
+          }
+				}
+			}
+		}
 	}
 }

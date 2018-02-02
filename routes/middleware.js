@@ -28,6 +28,51 @@ exports.initLocals = function (req, res, next) {
 	next();
 };
 
+//Latest News
+exports.initLocals = function (req, res, next) {
+	//need to import this dynamically
+	//ONLY THREE FEATURED AT ALL TIMES
+	res.locals.latestNews = [
+		{
+		  author: "Bob",
+		  dateOf: "JAN 17",
+		  title: "Test",
+		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+			link: "#",
+			featured: false
+		},
+		{
+		  author: "Bob2",
+		  dateOf: "JAN 18",
+		  title: "Test2",
+		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+			link: "#",
+			featured: true
+		},
+		{
+		  author: "Bob3",
+		  dateOf: "JAN 19",
+		  title: "Test3",
+		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+			link: "#",
+			featured: true
+		},
+		{
+			author: "Bob4",
+			dateOf: "JAN 19",
+			title: "Test4",
+			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+			image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+			link: "#",
+			featured: true
+		}
+	];
+	res.locals.user = req.user;
+	next();
+};
 
 /**
 	Fetches and clears the flashMessages before a view is rendered

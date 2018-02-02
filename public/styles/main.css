@@ -6059,6 +6059,9 @@ body {
   body p {
     font-size: 17px;
     color: black; }
+  body .date {
+    font-size: 19px;
+    font-weight: 400; }
 
 #home section h2 {
   text-align: center;
@@ -6112,6 +6115,10 @@ body {
 ======================*/
 #home h2 {
   margin: 0px; }
+
+#home .read-more {
+  color: #5aa2e8;
+  font-size: smaller; }
 
 /***** Hero ******/
 body #body #section-hero {
@@ -6185,7 +6192,7 @@ body #body #section-help #section-help_wrapper #section-help_text .headline {
     vertical-align: middle;
     padding: 2vw; }
   body #body #section-help #section-help_wrapper #section-help_text .headline img.banner {
-    width: 30%;
+    width: 33%;
     max-width: 100%; }
 
 body #body #section-help #section-help_wrapper #section-help_text .one-half h2 {
@@ -6201,6 +6208,49 @@ body #body #section-help #section-help_wrapper #section-help_text .one-half butt
   font-size: 18px;
   letter-spacing: 1.5px; }
 
+/***** latest stories ******/
+body #body #section-stories {
+  background-color: #f5f4f4; }
+  body #body #section-stories #section-stories_wrapper #section-stories_text .headline {
+    text-align: center; }
+    body #body #section-stories #section-stories_wrapper #section-stories_text .headline h2 {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 2vw; }
+    body #body #section-stories #section-stories_wrapper #section-stories_text .headline img.banner {
+      width: 33%;
+      max-width: 100%; }
+  body #body #section-stories #section-stories_wrapper #section-stories_text .one-third {
+    max-width: 100%;
+    vertical-align: top; }
+    body #body #section-stories #section-stories_wrapper #section-stories_text .one-third h2 {
+      padding: 2vh; }
+  body #body #section-stories #section-stories_wrapper #section-stories_text .section-top {
+    background-image: url(http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg);
+    background-size: cover;
+    height: 255px; }
+    body #body #section-stories #section-stories_wrapper #section-stories_text .section-top p {
+      background-color: #498fe2;
+      box-shadow: 2px 5px rgba(0, 0, 0, 0.2);
+      color: #FFFFFF;
+      padding: 12px 15px;
+      display: inline-block; }
+  body #body #section-stories #section-stories_wrapper #section-stories_text .section-bottom {
+    padding: 10px;
+    background-color: #FFFFFF; }
+    body #body #section-stories #section-stories_wrapper #section-stories_text .section-bottom .title {
+      font-weight: bold;
+      color: #darkGray;
+      font-size: 16px;
+      padding-bottom: 0px;
+      margin-bottom: 1px; }
+    body #body #section-stories #section-stories_wrapper #section-stories_text .section-bottom p {
+      font-size: smaller; }
+    body #body #section-stories #section-stories_wrapper #section-stories_text .section-bottom p:last-child {
+      text-align: right;
+      font-size: 14px;
+      letter-spacing: 0.5px; }
+
 /*   MOBILE
 ==================*/
 /*    DEFAULT MOBILE STYLES
@@ -6208,7 +6258,9 @@ body #body #section-help #section-help_wrapper #section-help_text .one-half butt
 /* Breakpoints for smooth transition of hero image */
 @media (max-width: 400px) {
   #section-hero_wrapper {
-    height: 235px !important; } }
+    height: 235px !important; }
+  h2 {
+    font-size: 24px !important; } }
 
 @media (max-width: 450px) {
   #section-hero_wrapper {
@@ -6315,7 +6367,9 @@ body #body #section-help #section-help_wrapper #section-help_text .one-half butt
 /* Set specific dimensions to full-width */
 @media (max-width: 850px) {
   .one-third {
-    width: 100% !important; } }
+    width: 100% !important; }
+  img.banner {
+    width: 19% !important; } }
 
 /* Burger Menu  */
 @media (max-width: 899px) {

@@ -1,21 +1,30 @@
 /*    HOME STYLES
 ======================*/
-
 //Primary colors palette
 // -------------------------
-$white:          #FFFFFF;
 $black:          #000000;
+$gray:           #908e8f;
+$blue:           #498fe2;
+$lightBlue:      #5aa2e8;
+$lightGray:      #f5f4f4;
+$darkGray:       #565656;
 $orange:         #f6aa44;
-$lightGray:      #908e8f;
+$white:          #FFFFFF;
+
 //Overwriting Bootstrap margin-top on h2 for homepage only -- CAN BE REMOVED
 // -------------------------
 #home{
   h2{
     margin:0px;
   }
+  .read-more{
+    color:$lightBlue;
+    font-size:smaller;
+   }
 }
 
 @import "home/home-hero";
 @import "home/home-intro";
 @import "home/home-services";
-@import "home/home-how_to_help"
+@import "home/home-how_to_help";
+@import "home/home-latest_stories";

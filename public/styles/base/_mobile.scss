@@ -4,7 +4,10 @@
 @media (max-width: 400px) {
 	#section-hero_wrapper{
 			height:235px !important;
+	}
 
+	h2{
+		font-size:24px !important;
 	}
 }
 
@@ -186,6 +189,9 @@
 @media (max-width:850px){
 	.one-third{
 		width: 100% !important;
+	}
+	img.banner{
+		width:19% !important;
 	}
 }
 

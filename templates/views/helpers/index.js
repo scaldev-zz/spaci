@@ -28,6 +28,29 @@ module.exports = function () {
 		}
 	};
 
+	_helpers.ifgte = function (a, b, options) {
+		if (a >= b) { // eslint-disable-line eqeqeq
+			return options.fn(this);
+		}else{
+			return options.inverse(this);
+		}
+	};
+
+	_helpers.iter = function(context, options){
+		var fn = options.fn, inverse = options.inverse;
+		var ret = "";
+
+		if(context && context.length > 0){
+			for(var i=0, j=context.length; i < 3; i++){
+				ret = ret + fn(context[i]);
+			}
+		}
+		else {
+			ret = inverse(this);
+		}
+		return ret;
+
+	}
 	/**
 	 * Port of Ghost helpers to support cross-theming
 	 * ==============================================
