@@ -17,25 +17,21 @@ var _ = require('lodash');
 	the navigation in the header, you may wish to change this array
 	or replace it with your own templates / logic.
 */
+//Latest News
 exports.initLocals = function (req, res, next) {
+
 	res.locals.navLinks = [
 		{ label: 'Notre Mission', key: 'notre mission', href: '/' },
 		{ label: 'Nouvelles', key: 'nouvelles', href: '/gallery' },
 		{ label: 'Nos partenaires', key: 'nos pertenaires', href: '/gallery' },
-		{ label: 'Contact', key: 'contact', href: '/contact' },
+		{ label: 'Contact', key: 'contact', href: '/contact' }
 	];
-	res.locals.user = req.user;
-	next();
-};
-
-//Latest News
-exports.initLocals = function (req, res, next) {
 	//need to import this dynamically
 	//ONLY THREE FEATURED AT ALL TIMES
 	res.locals.latestNews = [
 		{
 		  author: "Bob",
-		  dateOf: "JAN 17",
+		  dateOf: "JAN 22",
 		  title: "Test",
 		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
 		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
@@ -44,7 +40,7 @@ exports.initLocals = function (req, res, next) {
 		},
 		{
 		  author: "Bob2",
-		  dateOf: "JAN 18",
+		  dateOf: "JAN 22",
 		  title: "Test2",
 		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
 		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",

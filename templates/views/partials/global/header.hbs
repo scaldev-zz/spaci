@@ -5,7 +5,7 @@
                 <a href="/" class=""><img src="/images/spaci-logo.png" class="logo-img" alt="spaci"/></a>
             </div>
             <div class="header-content__links">
-                  {{# each navLinks}}
+                  {{#each navLinks}}
                     <div {{#ifeq ../section key}} class="link active"{{else}}class="link"{{/ifeq}}>
                         <a href="{{ href }}">{{ label }}</a>
                     </div>
@@ -14,7 +14,7 @@
            <!-- DO NOT DELETE -->
            <!-- Navigation for Burger-Icon-->
            <div class="b-nav">
-           {{# each navLinks}}
+           {{#each navLinks}}
              <div {{#ifeq ../section key}} class="link active"{{else}}class="link"{{/ifeq}}>
                  <li><a class="b-link" href="{{ href }}">{{ label }}</a></li>
              </div>
@@ -29,7 +29,8 @@
              <div class="b-bun b-bun--bottom"></div>
            </div>
          </div>
-            <!-- <div class="container-fluid">
+            <!--
+             <div class="container-fluid">
                 <div class="">
                     <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
                         <span class="sr-only">Toggle navigation</span>
@@ -39,18 +40,18 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="">
-                          {{# each navLinks}}
-                            <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-                                <a href="{{ href }}">{{ label }}</a>
+                          # each navLinks
+                            <li #ifeq ../section key class="active"else /ifeq>
+                                <a href="href"> label </a>
                             </li>
-                          {{/each}}
+                          /each
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        {{#if user}}
+                        #if user
                         <li><a href="/keystone/signout">Sign Out</a></li>
-                        {{else}}
+                        else
                         <li><a href="/keystone/signin">Sign In</a></li>
-                        {{/if}}
+                        /if
                     </ul>
                 </div>
             </div> -->
