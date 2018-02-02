@@ -6047,6 +6047,7 @@ body.open:after {
 */
 body {
   color: #000000;
+  font-family: 'Avenir Next';
   font: normal 125%/1.4 #000000; }
   body h1, body h2 {
     font-family: 'Avenir Next';
@@ -6055,19 +6056,15 @@ body {
     font-family: 'Avenir Next';
     color: #000000; }
   body a {
+    font-family: 'Avenir Next';
     color: #000000; }
   body p {
+    font-family: 'Avenir Next';
     font-size: 17px;
     color: black; }
   body .date {
     font-size: 19px;
     font-weight: 400; }
-
-#home section h2 {
-  text-align: center;
-  padding: 1vh 0 5vh;
-  letter-spacing: 0.8px;
-  font-weight: 400; }
 
 /*    MODULES
 ==================*/
@@ -6084,6 +6081,13 @@ body {
     z-index: 10;
     background-color: #ffffff;
     width: 100%; }
+    .header.sticky .header-content {
+      height: 80px; }
+      .header.sticky .header-content_logo {
+        display: flex;
+        align-items: center; }
+        .header.sticky .header-content_logo img {
+          max-width: 120px; }
   .header .container {
     padding: 0; }
   .header-content {
@@ -6102,19 +6106,104 @@ body {
         border-color: #4A90E2; }
       .header-content__links .link a {
         border-bottom: 3px solid transparent;
-        transition: border-color 0.6s ease;
+        transition: border-color 0.5s ease;
         padding-bottom: 8px; }
         .header-content__links .link a:hover {
           color: #04080e;
           text-decoration: none;
           border-color: #4A90E2; }
 
+/*==========================
+*    HEADER FOOTER STYLES
+===========================*/
+.footer {
+  background-color: #252525;
+  color: #ffffff;
+  font-weight: 200;
+  padding: 10vh 4vw 7vh;
+  position: relative;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .footer .columns {
+    display: flex;
+    justify-content: space-between; }
+    .footer .columns .column:first-child {
+      min-width: 25%; }
+    .footer .columns .column:nth-child(2), .footer .columns .column:last-child {
+      min-width: 35%; }
+    .footer .columns .column h3, .footer .columns .column p {
+      margin-top: 0;
+      color: #ffffff; }
+    .footer .columns .column h3 {
+      font-weight: normal; }
+    .footer .columns .column p {
+      width: 70%; }
+    .footer .columns .column .link-list {
+      list-style-type: none;
+      padding: 0; }
+      .footer .columns .column .link-list .link-item {
+        padding-bottom: 20px; }
+        .footer .columns .column .link-list .link-item a {
+          color: #ffffff;
+          font-size: 24px;
+          font-weight: normal;
+          border-bottom: 2px solid transparent;
+          transition: all 0.3s ease; }
+          .footer .columns .column .link-list .link-item a:active, .footer .columns .column .link-list .link-item a:hover {
+            text-decoration: none;
+            color: #a29f99; }
+    .footer .columns .column.subscription .subscription-form {
+      margin-top: 40px; }
+      .footer .columns .column.subscription .subscription-form input {
+        border-radius: 10px 0 0 10px; }
+      .footer .columns .column.subscription .subscription-form .subscription-button {
+        border-radius: 0 10px 10px 0;
+        margin-left: -5px; }
+    .footer .columns .column.location #map {
+      width: 100%;
+      height: 350px;
+      margin-top: 20px; }
+  .footer .copyright {
+    color: #ffffff; }
+
+/*==========================
+*    FORMS STYLES
+===========================*/
+form input {
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #252525;
+  min-width: 250px;
+  outline: none;
+  border: none; }
+  form input::placeholder {
+    color: #555555; }
+
+form button {
+  font-family: "Avenir Next";
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background: #377fd1;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out; }
+  form button:hover {
+    background-color: #2E66A8; }
+
 /*    PAGES
 ==================*/
 /*    HOME STYLES
 ======================*/
-#home h2 {
-  margin: 0px; }
+#home section h2 {
+  margin: 0px;
+  text-align: center;
+  padding: 1vh 0 5vh;
+  letter-spacing: 0.8px;
+  font-weight: 400; }
 
 #home .read-more {
   color: #5aa2e8;

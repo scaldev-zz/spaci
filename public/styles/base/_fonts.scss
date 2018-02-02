@@ -2,7 +2,7 @@
 ======================*/
 @font-face {
 	font-family: 'Avenir Next';
-	src: local('Avenit Next Pro Regular'), local('AvenirNext'),
+	src: local('Avenir Next Pro Regular'), local('AvenirNext'),
 		url('../fonts/avenirnext/AvenirNextLTPro-Regular.otf') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
@@ -10,16 +10,16 @@
 
 @font-face {
 	font-family: 'Avenir Next Light';
-	src: local('Avenit Next Pro Light'), local('AvenirNext-lt'),
+	src: local('Avenir Next Pro Light'), local('AvenirNext-lt'),
 		url('../fonts/avenirnext/AvenirNextLTPro-lt.otf') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Avenir Next';
-	src: local('Avenit Next Pro Bold'), local('AvenirNext-Bold'),
+	font-family: 'Avenir Next Bold';
+	src: local('Avenir Next Pro Bold'), local('AvenirNext-Bold'),
 		url('../fonts/avenirnext/AvenirNextLTPro-Bold.otf') format('embedded-opentype');
-	font-weight: bold;
+	font-weight: normal;
 	font-style: normal;
 }
