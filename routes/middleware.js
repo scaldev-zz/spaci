@@ -30,38 +30,38 @@ exports.initLocals = function (req, res, next) {
 	//ONLY THREE FEATURED AT ALL TIMES
 	res.locals.latestNews = [
 		{
-		  author: "Bob",
+		  author: "Author 1",
 		  dateOf: "JAN 22",
 		  title: "Test",
 		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+		  image: "/images/image1.jpg",
 			link: "#",
 			featured: false
 		},
 		{
-		  author: "Bob2",
+		  author: "Author 2",
 		  dateOf: "JAN 22",
-		  title: "Test2",
+		  title: "Lorem ipsum",
 		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+		  image: "/images/image1.jpg",
 			link: "#",
 			featured: true
 		},
 		{
-		  author: "Bob3",
+		  author: "Author 3",
 		  dateOf: "JAN 19",
-		  title: "Test3",
+		  title: "Lorem ipsum",
 		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-		  image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+		  image: "/images/image2.jpg",
 			link: "#",
 			featured: true
 		},
 		{
-			author: "Bob4",
+			author: "Author 4",
 			dateOf: "JAN 19",
-			title: "Test4",
+			title: "Lorem ipsum",
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-			image: "http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg",
+			image: "/images/image3.jpg",
 			link: "#",
 			featured: true
 		}

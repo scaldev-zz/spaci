@@ -3,6 +3,14 @@ body{
   #body{
 		#section-help {
 			#section-help_wrapper {
+
+        background-image: url('/images/background.jpg');
+        background-size: cover;
+        background-color: transparent;
+        opacity: 0.8;
+        background-position: center;
+        min-height: 500px;
+
 				#section-help_text {
           .headline{
             text-align: center;
@@ -11,6 +19,7 @@ body{
               display: inline-block;
               vertical-align: middle;
               padding: 2vw;
+              color:white;
             }
             img.banner{
               width: 33%;
@@ -18,9 +27,11 @@ body{
             }
           }
           .one-half{
-              h2{
+            h2{
                 padding: 2vh;
-            }
+                color:white;
+             }
+            p{color:white;}
 
             button{
               background-color: #e20707;

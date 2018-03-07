@@ -6274,28 +6274,37 @@ set color variable to white
       padding: 2vh; }
 
 /***** how to help ******/
-body #body #section-help #section-help_wrapper #section-help_text .headline {
-  text-align: center; }
-  body #body #section-help #section-help_wrapper #section-help_text .headline h2 {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 2vw; }
-  body #body #section-help #section-help_wrapper #section-help_text .headline img.banner {
-    width: 33%;
-    max-width: 100%; }
-
-body #body #section-help #section-help_wrapper #section-help_text .one-half h2 {
-  padding: 2vh; }
-
-body #body #section-help #section-help_wrapper #section-help_text .one-half button {
-  background-color: #e20707;
-  border-radius: 6px;
-  color: white;
-  border: none;
-  margin-top: 8vh;
-  padding: 12px 20px;
-  font-size: 18px;
-  letter-spacing: 1.5px; }
+body #body #section-help #section-help_wrapper {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-color: transparent;
+  opacity: 0.8;
+  background-position: center;
+  min-height: 500px; }
+  body #body #section-help #section-help_wrapper #section-help_text .headline {
+    text-align: center; }
+    body #body #section-help #section-help_wrapper #section-help_text .headline h2 {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 2vw;
+      color: white; }
+    body #body #section-help #section-help_wrapper #section-help_text .headline img.banner {
+      width: 33%;
+      max-width: 100%; }
+  body #body #section-help #section-help_wrapper #section-help_text .one-half h2 {
+    padding: 2vh;
+    color: white; }
+  body #body #section-help #section-help_wrapper #section-help_text .one-half p {
+    color: white; }
+  body #body #section-help #section-help_wrapper #section-help_text .one-half button {
+    background-color: #e20707;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    margin-top: 8vh;
+    padding: 12px 20px;
+    font-size: 18px;
+    letter-spacing: 1.5px; }
 
 /***** latest stories ******/
 body #body #section-stories {
