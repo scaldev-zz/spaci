@@ -57,6 +57,10 @@
 
                         }
                     }
+
+                }
+                .link-item:last-child(){
+                  a{font-size: 22px;}
                 }
             }
 
@@ -81,6 +85,14 @@
                 }
             }
         }
+    }
+    .questions{
+
+        .link, .mail-link{
+          color:#D5D4DE;
+          text-decoration: underline;
+        }
+
     }
 
     .copyright {

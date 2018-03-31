@@ -8,20 +8,25 @@
                   </li>
                 {{/each}}
                 <li {{#ifeq ../section key}} class="link-item active"{{else}}class="link-item"{{/ifeq}}>
-                    <a class="link" href="{{ href }}">Privacy Policy</a>
+                    <a class="link" href="{{ href }}">Politique de confidentialité</a>
                 </li>
             </ul>
         </div>
-        <div class="column subscription">
+        <div class="column questions">
+          <h3>Vous voulez en savoir plus?</h3>
+          <br />
+          <p>Écrivez nous à l'une des adresses suivantes : <a class="mail-link" href="mailto:spanimaux.ci@gmail.com">spanimaux.ci@gmail.com</a> ou <a class="mail-link" href="mailto:cpanimaux.ci@gmail.com">cpanimaux.ci@gmail.com</a>.  Vous pouvez aussi vous rendre sur la page Facebook du Comité de Protection des Animaux (CPA): <a class="link" href="https://fr-fr.facebook.com/cpanimaux/">https://fr-fr.facebook.com/cpanimaux/</a>.</p>
+        </div>
+        <!--<div class="column subscription">
             <h3>Vous voulez en savoir plus?</h3>
             <p>Subscribe to our news letter to receive the latest news and updates on our cause and animals</p>
             <form class="subscription-form">
                 <input type="text" name="email" placeholder="example@email.com">
                 <button class="subscription-button" >Subscribe</button>
             </form>
-        </div>
+        </div>-->
         <div class="column location">
-            <h3>Notre emplacement</h3>
+            <h3>Localisation</h3>
             <div id="map"></div>
              <script>
                function initMap() {
@@ -46,5 +51,5 @@
     {{else}}
     <li><a href="/keystone/signin">Sign In</a></li>
     {{/if}} -->
-    <p class="copyright">© <script type="text/javascript">document.write (new Date().getFullYear());</script> Secours et Protection des Animaux de C&Auml;te d'lvoire. All rights reserved.</p>
+    <p class="copyright">© <script type="text/javascript">document.write (new Date().getFullYear());</script> Secours et Protection des Animaux de Côte d’Ivoire. Tous droits réservés.</p>
 </div>

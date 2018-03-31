@@ -6154,6 +6154,8 @@ body {
           .footer .columns .column .link-list .link-item a:active, .footer .columns .column .link-list .link-item a:hover {
             text-decoration: none;
             color: #a29f99; }
+      .footer .columns .column .link-list .link-item:last-child a {
+        font-size: 22px; }
     .footer .columns .column.subscription .subscription-form {
       margin-top: 40px; }
       .footer .columns .column.subscription .subscription-form input {
@@ -6165,6 +6167,9 @@ body {
       width: 100%;
       height: 350px;
       margin-top: 20px; }
+  .footer .questions .link, .footer .questions .mail-link {
+    color: #D5D4DE;
+    text-decoration: underline; }
   .footer .copyright {
     color: #ffffff; }
 
@@ -6212,7 +6217,7 @@ form button {
 /***** Hero ******/
 body #body #section-hero {
   max-height: 100%;
-  padding-left: 3%;
+  padding-left: 4%;
   padding-right: 3%; }
   body #body #section-hero #section-hero_wrapper {
     background-image: url("/images/spaci-hero.jpg");
@@ -6289,7 +6294,7 @@ body #body #section-help #section-help_wrapper {
       padding: 2vw;
       color: white; }
     body #body #section-help #section-help_wrapper #section-help_text .headline img.banner {
-      width: 33%;
+      width: 30%;
       max-width: 100%; }
   body #body #section-help #section-help_wrapper #section-help_text .one-half h2 {
     padding: 2vh;
