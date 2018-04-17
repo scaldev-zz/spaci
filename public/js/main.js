@@ -1,13 +1,14 @@
+'use strict';
+const Home = require('./home');
+
 
 const App = {
 
-	/**
-	 * Initialization
-	 */
 	init() {
-        this.isVisible();
+        this.navHandler();
+				Home.init();
     },
-    isVisible(){
+    navHandler(){
         window.addEventListener("scroll", function() {
           var elementTarget = document.getElementsByClassName('header')[0];
           var height = elementTarget.offsetHeight;
@@ -16,11 +17,10 @@ const App = {
           }else {
               elementTarget.classList.remove('sticky');
           }
+
         });
     }
 };
-// TO-DO: don't have babel working yet
-// export default App;
 
 (function () {
 	App.init();

@@ -1,59 +1,51 @@
 /***** Hero ******/
-body{
-  #body{
-		#section-hero {
-			max-height: 100%;
-      padding-left: 4%;
-      padding-right: 3%;
+.section-hero {
+	max-height: 100%;
+	padding:4%;
 
-			#section-hero_wrapper {
-				background-image: url('/images/spaci-hero.jpg');
-				background-repeat: no-repeat;
-				background-size: contain;
-				height: 672px;
-				max-width: 100%;
-				max-height: 100%;
-				position: relative;
-        padding: 0px;
-        text-align: center;
+	.section-hero_wrapper {
+		position: relative;
 
-				#section-hero_text {
-					position: relative;
-					top: 18vw;
+		.section-hero_text {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			background: #fff;
+			text-align: center;
+			padding: 20px 10px;
+			width: 60%;
 
-					h1,
-					h2 {
-						text-transform: none;
-					}
-
-					h1 {
-						font-size: 35px;
-						/* 31 */
-						line-height: 40px;
-						/*40*/
-						letter-spacing: -1px;
-						font-weight: bolder;
-					}
-
-					h2 {
-						font-size: 28px;
-						font-weight: 400;
-            padding: 5px;
-					}
-
-					.faites-button {
-						background-color: $orange;
-						border: 1px solid $orange;
-						display: inline-block;
-            color: $white;
-						font-size: 27px;
-						letter-spacing: -1px;
-					}
-				}
-				//end section-hero__text
+			.headline {
+        margin-top:0px;
+				font-size: 2.5vw;
+				line-height: 3vw;
+				letter-spacing: -1px;
+				font-weight: bolder;
 			}
-			//end section-hero__wrapper
+
+		   .subtext {
+				font-size: 2vw;
+				font-weight: 400;
+				padding: 5px;
+			}
+
+			.faites-button {
+				background-color: $orange;
+				border: 1px solid $orange;
+				display: inline-block;
+				color: $white;
+				font-size: 2.4vw;
+				letter-spacing: -1px;
+			}
 		}
-		//end section-hero
+		//end section-hero__text
 	}
+
+	&_image {
+		img {
+			width: 100%;
+		}
+	}
+	//end section-hero__wrapper
 }

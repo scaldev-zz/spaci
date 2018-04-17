@@ -26,46 +26,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Nos partenaires', key: 'nos pertenaires', href: '/gallery' },
 		{ label: 'Contact', key: 'contact', href: '/contact' }
 	];
-	//need to import this dynamically
-	//ONLY THREE FEATURED AT ALL TIMES
-	res.locals.latestNews = [
-		{
-		  author: "Author 1",
-		  dateOf: "JAN 22",
-		  title: "Test",
-		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-		  image: "/images/image1.jpg",
-			link: "#",
-			featured: false
-		},
-		{
-		  author: "Author 2",
-		  dateOf: "JAN 22",
-		  title: "Lorem ipsum",
-		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-		  image: "/images/image1.jpg",
-			link: "#",
-			featured: true
-		},
-		{
-		  author: "Author 3",
-		  dateOf: "JAN 19",
-		  title: "Lorem ipsum",
-		  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-		  image: "/images/image2.jpg",
-			link: "#",
-			featured: true
-		},
-		{
-			author: "Author 4",
-			dateOf: "JAN 19",
-			title: "Lorem ipsum",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-			image: "/images/image3.jpg",
-			link: "#",
-			featured: true
-		}
-	];
+
 	res.locals.user = req.user;
 	next();
 };

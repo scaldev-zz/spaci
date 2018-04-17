@@ -5923,27 +5923,30 @@ body.open:after {
 
 .b-nav {
   position: absolute;
-  z-index: 11; }
+  z-index: 11;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0; }
   .b-nav:not(.open) {
     visibility: hidden; }
   .b-nav li {
     color: #444444;
     list-style-type: none;
-    padding: 10px;
+    padding: 50px 10px 10px;
     text-align: left;
     transform: translateX(-250px); }
   .b-nav li:not(.open) {
     animation-duration: 0.4s;
     animation-fill-mode: both;
     animation-name: slideOutLeft; }
-  .b-nav li:first-child {
-    padding-top: 120px; }
   .b-nav.open {
     visibility: visible; }
     .b-nav.open li {
       animation-duration: 0.4s;
       animation-fill-mode: both;
       animation-name: slideInLeft; }
+  .b-nav .link:first-child li {
+    padding-top: 120px; }
 
 .b-link {
   background: transparent;
@@ -5957,8 +5960,10 @@ body.open:after {
   transition: all 0.4s ease;
   width: auto; }
   .b-link:hover, .b-link--active {
-    border-left: #444444 solid 2px;
-    padding-left: 30px; }
+    border-left: #4A90E2 solid 3px;
+    color: #04080e;
+    padding-left: 30px;
+    text-decoration: none; }
 
 .b-menu {
   background: white;
@@ -6072,15 +6077,22 @@ body {
 *    HEADER DEFAULT STYLES
 ===========================*/
 .header {
+  position: relative;
   border-bottom: 1px solid #e3e3e3;
-  top: -140px;
-  transition: top 0.6s ease-in-out; }
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 10; }
+  @media (max-width: 900px) {
+    .header {
+      height: 120px; }
+      .header .header-content_logo img {
+        width: 70%; } }
   .header.sticky {
     position: fixed;
-    top: 0;
-    z-index: 10;
-    background-color: #ffffff;
-    width: 100%; }
+    animation-name: slideIn;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; }
     .header.sticky .header-content {
       height: 80px; }
       .header.sticky .header-content_logo {
@@ -6112,6 +6124,12 @@ body {
           color: #04080e;
           text-decoration: none;
           border-color: #4A90E2; }
+
+@keyframes slideIn {
+  0% {
+    top: -140px; }
+  100% {
+    top: 0px; } }
 
 /*==========================
 *    HEADER FOOTER STYLES
@@ -6215,44 +6233,39 @@ form button {
   font-size: smaller; }
 
 /***** Hero ******/
-body #body #section-hero {
+.section-hero {
   max-height: 100%;
-  padding-left: 4%;
-  padding-right: 3%; }
-  body #body #section-hero #section-hero_wrapper {
-    background-image: url("/images/spaci-hero.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 672px;
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
-    padding: 0px;
-    text-align: center; }
-    body #body #section-hero #section-hero_wrapper #section-hero_text {
-      position: relative;
-      top: 18vw; }
-      body #body #section-hero #section-hero_wrapper #section-hero_text h1,
-      body #body #section-hero #section-hero_wrapper #section-hero_text h2 {
-        text-transform: none; }
-      body #body #section-hero #section-hero_wrapper #section-hero_text h1 {
-        font-size: 35px;
-        /* 31 */
-        line-height: 40px;
-        /*40*/
+  padding: 4%; }
+  .section-hero .section-hero_wrapper {
+    position: relative; }
+    .section-hero .section-hero_wrapper .section-hero_text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      width: 60%; }
+      .section-hero .section-hero_wrapper .section-hero_text .headline {
+        margin-top: 0px;
+        font-size: 2.5vw;
+        line-height: 3vw;
         letter-spacing: -1px;
         font-weight: bolder; }
-      body #body #section-hero #section-hero_wrapper #section-hero_text h2 {
-        font-size: 28px;
+      .section-hero .section-hero_wrapper .section-hero_text .subtext {
+        font-size: 2vw;
         font-weight: 400;
         padding: 5px; }
-      body #body #section-hero #section-hero_wrapper #section-hero_text .faites-button {
+      .section-hero .section-hero_wrapper .section-hero_text .faites-button {
         background-color: #f6aa44;
         border: 1px solid #f6aa44;
         display: inline-block;
         color: #FFFFFF;
-        font-size: 27px;
+        font-size: 2.4vw;
         letter-spacing: -1px; }
+  .section-hero_image img {
+    width: 100%; }
 
 /**** Intro *****/
 /*set variable of padding of all pages similar to what we do
@@ -6353,6 +6366,52 @@ body #body #section-stories {
       text-align: right;
       font-size: 14px;
       letter-spacing: 0.5px; }
+
+.section-featured {
+  margin: 50px auto; }
+  .section-featured_content {
+    max-width: 85%;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap; }
+    .section-featured_content .item {
+      margin: 0 10px 10px 0px;
+      min-height: 300px;
+      max-height: 300px;
+      overflow: hidden;
+      position: relative; }
+      .section-featured_content .item:nth-child(3n) {
+        margin-right: 0;
+        flex-grow: 1; }
+      .section-featured_content .item:nth-child(-n+3) {
+        width: calc(100%/3 - 10px); }
+      .section-featured_content .item:nth-child(4n), .section-featured_content .item:last-child {
+        width: 35%;
+        flex-grow: 1; }
+      .section-featured_content .item:nth-child(n + 5) {
+        min-width: calc(100%/4 - 10px);
+        flex-grow: 1; }
+      .section-featured_content .item .image {
+        background-color: #ccc;
+        height: 100%;
+        transition: all .5s; }
+      .section-featured_content .item .context {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 35%;
+        width: 100%;
+        color: #fff;
+        bottom: 0;
+        padding: 20px;
+        opacity: 0;
+        transition: all .5s; }
+        .section-featured_content .item .context .headline {
+          color: #fff;
+          margin-top: 0; }
+      .section-featured_content .item:hover .image, .section-featured_content .item:focus .image {
+        transform: scale(1.2); }
+      .section-featured_content .item:hover .context, .section-featured_content .item:focus .context {
+        opacity: 1; }
 
 /*   MOBILE
 ==================*/

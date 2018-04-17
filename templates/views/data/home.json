@@ -1,0 +1,24 @@
+[{
+  "featured-gallery": [
+    {
+      "image-src": "https://placekitten.com/g/200/300",
+      "image-alt": "kitten placeholder"
+    },
+    {
+      "image-src": "https://placekitten.com/g/200/300",
+      "image-alt": "kitten placeholder"
+    },
+    {
+      "image-src": "https://placekitten.com/g/200/300",
+      "image-alt": "kitten placeholder"
+    },
+    {
+      "image-src": "https://placekitten.com/g/200/300",
+      "image-alt": "kitten placeholder"
+    },
+    {
+      "image-src": "https://placekitten.com/g/200/300",
+      "image-alt": "kitten placeholder"
+    }
+  ]
+}]

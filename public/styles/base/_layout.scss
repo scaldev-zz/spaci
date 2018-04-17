@@ -135,6 +135,9 @@ body {
 .b-nav {
   position: absolute;
   z-index: 11;
+  background-color: $white;
+  width:100%;
+  left: 0;
 
   &:not(.open) {
     visibility: hidden;
@@ -143,7 +146,7 @@ body {
   li {
     color: color(complement);
     list-style-type: none;
-    padding: 10px;
+    padding: 50px 10px 10px;
     text-align: left;
     transform: translateX(-250px);
   }
@@ -152,10 +155,6 @@ body {
     animation-duration: $b-trans-speed;
     animation-fill-mode: both;
     animation-name: slideOutLeft;
-  }
-
-  li:first-child {
-    padding-top: $b-txt-pad-top;
   }
 
   &.open {
@@ -167,6 +166,12 @@ body {
       animation-name: slideInLeft;
     }
   }
+
+    .link:first-child {
+        li {
+          padding-top: $b-txt-pad-top;
+        }
+    }
 }
 
 .b-link {
@@ -183,8 +188,11 @@ body {
 
   &:hover,
   &--active {
-    border-left: color(complement) solid $b-border-width;
+    // border-left: color(complement) solid $b-border-width;
+    border-left:#4A90E2 solid 3px;
+    color:$black;
     padding-left: $b-txt-pad;
+    text-decoration: none;
   }
 }
 
