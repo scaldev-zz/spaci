@@ -6,33 +6,43 @@ $h2-letterspacing: 0.8px;
 $font-normal: 400;
 
 body {
-  color: $body-copy-color;
-  font-family: 'Avenir Next';
-  font: normal 125% / 1.4 $header-color;
-  h1, h2 {
-      font-family: 'Avenir Next';
-      font-weight: bold;
-  }
-  h3, h4, h5 {
-      font-family: 'Avenir Next';
-      color: $header-color;
-  }
+	color: $body-copy-color;
+	font-family: 'Avenir Next';
+	font: normal 125% / 1.4 $header-color;
 
-  a {
-      font-family: 'Avenir Next';
-      color: $link-color;
-  }
+	h1,
+	h2 {
+		font-family: 'Avenir Next';
+		font-weight: bold;
+	}
 
-  p{
-      font-family: 'Avenir Next';
-      font-size: 17px;
-      color:black;
-  }
-  
-  .date{
-    font-size:19px;
-    font-weight:400;
-  }
+	h3,
+	h4,
+	h5 {
+		font-family: 'Avenir Next';
+		color: $header-color;
+	}
 
+	a {
+		font-family: 'Avenir Next';
+		color: $blue;
+		transition: color 0.2s ease;
 
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	p {
+		font-family: 'Avenir Next';
+		font-size: 17px;
+		color: black;
+	}
+
+	button.button {
+		padding: 15px 40px;
+    border:none;
+		transition: all 0.2s ease;
+
+	}
 }

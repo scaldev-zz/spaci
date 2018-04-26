@@ -1,22 +1,19 @@
-/**** Intro *****/
-/*set variable of padding of all pages similar to what we do
-padding: 1% 25%;
-set color variable to white
-*/
-#home {
-  #section-intro{
-    background-color: $gray;
-    padding-left:25%;
-    padding-right:25%,;
+/*=======================
+      INTRO STYLES
+=========================*/
+$h2-color: $white;
 
-    #section-intro_wrapper{
-      color:$white;
 
-        p{
-            color:$white;
-            margin: 0 auto;
-            width:100%;
-        }
-      }//end section-intro__wrapper
-  }//end section-intro
+.section-intro {
+	background-color: #908E8F;
+
+  h2 {
+    color: $h2-color;
+    margin-bottom:10px;
+  }
+	&__content--copy {
+		color: $white;
+		margin: 0 auto;
+		width: 60%;
+	}
 }

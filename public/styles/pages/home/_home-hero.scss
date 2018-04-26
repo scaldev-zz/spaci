@@ -11,32 +11,33 @@
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%,-50%);
-			background: #fff;
+			background: $white;
 			text-align: center;
 			padding: 20px 10px;
 			width: 60%;
 
 			.headline {
-        margin-top:0px;
-				font-size: 2.5vw;
-				line-height: 3vw;
-				letter-spacing: -1px;
+				font-size: 2vw;
 				font-weight: bolder;
+				margin-top:0;
 			}
 
 		   .subtext {
-				font-size: 2vw;
+				font-size: 1.8vw;
 				font-weight: 400;
 				padding: 5px;
 			}
 
 			.faites-button {
 				background-color: $orange;
-				border: 1px solid $orange;
-				display: inline-block;
+				margin-top:20px;
 				color: $white;
-				font-size: 2.4vw;
-				letter-spacing: -1px;
+				font-size: 1.4vw;
+				font-weight:650;
+
+				&:hover {
+					background-color: $orangehover;
+				}
 			}
 		}
 		//end section-hero__text

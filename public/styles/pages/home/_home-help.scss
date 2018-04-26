@@ -1,0 +1,57 @@
+/*=======================
+      HOW TO HELP STYLES
+=========================*/
+$h2-color: $white;
+$section-color: $red;
+
+.section-help {
+	background:url("/images/background.jpg") no-repeat center center;
+	background-size: cover;
+	background-color: linear-gradient( rgba(0,0,0,0.5));
+	opacity: 0.8;
+
+
+	.section__title {
+			@include section-title($h2-color,$section-color);
+	}
+
+	.section-help__content {
+
+			display:flex;
+			margin:100px 0 50px;
+
+			&--column {
+				width:calc(100%/2 - 20px);
+				display: inline-block;
+				display:flex;
+				flex-direction:column;
+				justify-content: space-between;
+				align-items: center;
+
+				.image {
+					width:100%;
+					max-width:350px;
+				}
+
+				.title {
+					color:$h2-color;
+					margin-top:20px;
+				}
+
+				.description {
+					color: $h2-color;
+					width: 80%;
+					margin:0 auto 10%;
+				}
+				.button {
+  				background-color:$section-color;
+  				color:$white;
+
+					&:hover {
+						background-color:$redhover;
+					}
+  			}
+			}
+
+	}
+}

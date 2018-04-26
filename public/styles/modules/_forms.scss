@@ -6,7 +6,7 @@ form {
     input {
         padding:15px 20px;
         border-radius: 10px;
-        color: $dark-grey;
+        color: $darkGray;
         min-width: 250px;
         outline: none;
         border: none;
@@ -22,13 +22,13 @@ form {
         text-transform: uppercase;
         color: $white;
         border:none;
-        background: $button-blue;
+        background: $blue;
         padding: 15px 30px;
         border-radius: 5px;
         transition: all 0.2s ease-in-out;
 
         &:hover {
-            background-color: $dark-blue;
+            background-color:#2E66A8;
         }
     }
 }

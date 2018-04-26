@@ -1,11 +1,9 @@
-<section class="section-featured">
-  <div class="section-featured_wrapper padding">
-    <div class="section-featured_text">
-      <div class="headline">
-        <img src="/images/h2-decoration.jpg" class="banner"/><h2>Featured Animals</h2><img src="/images/h2-decoration.jpg" class="banner"/>
-      </div>
-    </div>
-    <div class="section-featured_content">
+<section class="section section-featured">
+  <div class="section__title">
+    <h2>Featured Animals</h2>
+  </div>
+  <div class="section-featured__content padding">
+    <div class="listing">
       {{#each featuredAnimals}}
         <div class="item">
           <div class="image" style="background: url('{{image.src}}') no-repeat center center; background-size:cover;"></div>
@@ -16,6 +14,8 @@
         </div>
       {{/each}}
     </div>
-    <button class="button" type="button">More Animals</button>
+    <div class="section-featured__content--button">
+      <button class="button" type="button">More Animals</button>
+    </div>
   </div>
 </section>

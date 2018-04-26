@@ -1,15 +1,57 @@
-/**** Our Services *****/
-#home {
-  #section-services{
-    background-color:$lightGray;
+/*=======================
+      INTRO STYLES
+=========================*/
+$h2-color: $darkGray;
 
-     #section-services_wrapper{
-        text-align: center;
+.section-services {
+	background-color: $lightGray;
 
-        .one-third{
-            h2{ padding:2vh;}
+  h2 {
+    color: $h2-color;
+    margin-bottom:50px;
+  }
 
+  .section-services__content {
+    display:flex;
+    justify-content: space-between;
+
+    &--column {
+      width:calc(100%/3 - 50px);
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+      .image {
+        width:100%;
+        max-width:250px;
+      }
+
+      .title {
+        margin:10% 0 10px;
+        color: $h2-color;
+      }
+
+      .description {
+        color: $h2-color;
+      }
+    }
+  }
+}
+
+
+/*
+    MOBILE STYLES
+=====================*/
+
+@media (max-width:900px){
+  .section-services {
+    .section-services__content {
+        flex-direction: column;
+
+        &--column {
+          width:80%;
+          margin:0 auto 5%;
         }
-     }
+    }
   }
 }

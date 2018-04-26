@@ -20,6 +20,14 @@
 	font-family: 'Avenir Next Bold';
 	src: local('Avenir Next Pro Bold'), local('AvenirNext-Bold'),
 		url('../fonts/avenirnext/AvenirNextLTPro-Bold.otf') format('embedded-opentype');
-	font-weight: normal;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Condensed';
+	src: local('Avenir Next Pro Condensed'), local('AvenirNext-Condensed'),
+		url('../fonts/avenirnext/AvenirNextCondensed-Medium.ttf') format('embedded-truetype');
+	font-weight: bold;
 	font-style: normal;
 }
