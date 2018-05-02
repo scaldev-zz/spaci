@@ -6273,7 +6273,8 @@ form button {
         background: #ffffff;
         text-align: center;
         padding: 20px 10px;
-        width: 60%; }
+        width: 60%;
+        z-index: 1; }
         #home .section-hero .section-hero_wrapper .section-hero_text .headline {
           font-size: 2vw;
           font-weight: bolder;
